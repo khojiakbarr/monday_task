@@ -11,14 +11,7 @@ interface Action {
 }
 
 const initialState: { products: ProductItem[] } = {
-  products: [
-    {
-      id: "1",
-      url: "https://i.pinimg.com/236x/78/0b/c9/780bc94187c2ece6350465393273db75.jpg",
-      name: "Product 1",
-      price: 10.99,
-    },
-  ],
+  products: [],
 };
 
 const productsReducer = (state = initialState, action: Action) => {
