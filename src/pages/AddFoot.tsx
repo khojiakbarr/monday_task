@@ -52,18 +52,21 @@ const AddFoot: React.FC = () => {
             type="text"
             placeholder="Mahsulot nomi"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             {...register("name")}
           />
           <input
             type="url"
             placeholder="Mahsulot rasmi urli"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             {...register("url")}
           />
           <input
             type="number"
             placeholder="Mahsulot narxi"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             {...register("price")}
           />
           <div className="w-full flex justify-stretch gap-3">
