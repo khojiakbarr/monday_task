@@ -24,7 +24,8 @@ const ReviewSection: React.FC = () => {
         const response = await axios(
           "https://jsonplaceholder.typicode.com/comments"
         );
-        setComments(response.data);
+        const limitedComments = response.data.slice(0, 15);
+        setComments(limitedComments);
       } catch (err) {
         console.log(err);
       } finally {
