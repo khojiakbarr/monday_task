@@ -12,6 +12,69 @@
   color: #f54749;
 }
 
+.bg_second_red {
+  background-color: #f5474a15;
+}
+
 .bg_red {
   background-color: #f54749;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    display: flex;
+  }
+}
+
+.line {
+  fill: none;
+  stroke: #f54749;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.burger_card {
+  backdrop-filter: blur(11px);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 9px;
+}
+
+.my_card {
+  box-shadow: 5px 5px 20px 0 rgba(36, 20, 21, 0.08);
+  background: #fff;
 }
