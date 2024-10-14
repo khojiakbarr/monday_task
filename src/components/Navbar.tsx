@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ path }) => {
             <img src="/top_gradient.svg" alt="" />
           </div>
           <Link to={"/"}>
-            <div className="lg:w-[129px] md:w-[100px] relative z-10">
+            <div className="lg:w-[129px] md:w-[100px] relative z-20">
               <img className="w-full" src="/logo.svg" alt="logo" />
             </div>
           </Link>
@@ -75,7 +75,7 @@ const Navbar: React.FC<NavbarProps> = ({ path }) => {
           <button
             className={`menu w-[40px]  ${
               isOpen ? " opened" : null
-            }  z-10 min-[767px]:hidden`}
+            }  z-20 min-[767px]:hidden`}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Main Menu"
           >
@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ path }) => {
             </svg>
           </button>
           <div
-            className="bg-white absolute top-0 left-0 w-full h-screen transition"
+            className="bg-white absolute top-0 left-0 w-full h-screen transition z-10"
             style={{
               transform: isOpen ? "translateX(0)" : "translateX(-100%)",
             }}
