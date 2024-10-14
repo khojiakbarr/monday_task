@@ -54,6 +54,7 @@ const EditProduct = () => {
             type="text"
             placeholder="Mahsulot nomi"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             defaultValue={product!.name}
             {...register("name")}
           />
@@ -61,6 +62,7 @@ const EditProduct = () => {
             type="url"
             placeholder="Mahsulot rasmi urli"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             defaultValue={product!.url}
             {...register("url")}
           />
@@ -68,6 +70,7 @@ const EditProduct = () => {
             type="number"
             placeholder="Mahsulot narxi"
             className="px-[15px] py-[12px] rounded-md border"
+            required
             defaultValue={product!.price}
             {...register("price")}
           />
